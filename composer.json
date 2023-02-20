@@ -1,0 +1,30 @@
+{
+    "name": "codehq-dk/repo-info-demo",
+    "description": "Demo project to show how to use the repo-info packages all together",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.1",
+        "codehq-dk/repo-info-contracts" : "v0.0.1-alpha",
+        "codehq-dk/repo-info-example-plugin" : "v0.0.1-alpha",
+        "codehq-dk/repo-info" : "*",
+        "slince/di" : "^3.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeHqDk\\RepositoryInformation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodeHqDk\\RepositoryInformation\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests",
+        "test-report": "vendor/bin/phpunit tests/ --coverage-html tests/CoverageReport"
+    }
+}

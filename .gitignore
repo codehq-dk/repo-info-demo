@@ -1,0 +1,6 @@
+.idea/
+vendor/
+/.phpunit.result.cache
+tests/data
+tests/CoverageReport
+config/config.php
