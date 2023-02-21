@@ -8,7 +8,7 @@
     "packages": [
         {
             "name": "codehq-dk/linux-bash-helper",
-            "version": "dev-main",
+            "version": "v0.0.1-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codehq-dk/linux-bash-helper.git",
@@ -26,7 +26,6 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.5"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -50,18 +49,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codehq-dk/repo-info.git",
-                "reference": "4471b494f4ab5abf61895b4d96000aaa49e2e06a"
+                "reference": "f6ea3977af7186810a3529668d6ab89ae3990104"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codehq-dk/repo-info/zipball/4471b494f4ab5abf61895b4d96000aaa49e2e06a",
-                "reference": "4471b494f4ab5abf61895b4d96000aaa49e2e06a",
+                "url": "https://api.github.com/repos/codehq-dk/repo-info/zipball/f6ea3977af7186810a3529668d6ab89ae3990104",
+                "reference": "f6ea3977af7186810a3529668d6ab89ae3990104",
                 "shasum": ""
             },
             "require": {
-                "codehq-dk/linux-bash-helper": "*",
-                "codehq-dk/repo-info-contracts": "*",
-                "codehq-dk/repo-info-example-plugin": "*",
+                "codehq-dk/linux-bash-helper": "v0.0.1-alpha",
+                "codehq-dk/repo-info-contracts": "v0.0.1-alpha",
+                "codehq-dk/repo-info-example-plugin": "v0.0.1-alpha",
                 "kodus/uuid-v4": "^1.2.0",
                 "php": ">=8.1"
             },
@@ -85,7 +84,7 @@
                 "issues": "https://github.com/codehq-dk/repo-info/issues",
                 "source": "https://github.com/codehq-dk/repo-info/tree/main"
             },
-            "time": "2023-02-19T13:36:19+00:00"
+            "time": "2023-02-21T16:53:46+00:00"
         },
         {
             "name": "codehq-dk/repo-info-contracts",
@@ -698,12 +697,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "87b660f75adb677ea503dd0b999dc90a999ad720"
+                "reference": "40b36fea5d4309a3181538b8540f66afcca8282c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/87b660f75adb677ea503dd0b999dc90a999ad720",
-                "reference": "87b660f75adb677ea503dd0b999dc90a999ad720",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/40b36fea5d4309a3181538b8540f66afcca8282c",
+                "reference": "40b36fea5d4309a3181538b8540f66afcca8282c",
                 "shasum": ""
             },
             "require": {
@@ -767,7 +766,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-20T06:08:06+00:00"
+            "time": "2023-02-21T09:38:09+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -1016,12 +1015,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ada16b71314bc852f7b199856bd2e12930951d24"
+                "reference": "c5e3ee5a497fc2d5a52dbe0c12e20487c924e2d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ada16b71314bc852f7b199856bd2e12930951d24",
-                "reference": "ada16b71314bc852f7b199856bd2e12930951d24",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c5e3ee5a497fc2d5a52dbe0c12e20487c924e2d1",
+                "reference": "c5e3ee5a497fc2d5a52dbe0c12e20487c924e2d1",
                 "shasum": ""
             },
             "require": {
@@ -1110,7 +1109,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-20T06:03:35+00:00"
+            "time": "2023-02-21T10:00:30+00:00"
         },
         {
             "name": "sebastian/cli-parser",

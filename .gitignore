@@ -4,3 +4,5 @@ vendor/
 tests/data
 tests/CoverageReport
 config/config.php
+data/cache
+data/repository-local-copy
