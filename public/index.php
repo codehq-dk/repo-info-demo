@@ -1,5 +1,6 @@
 <?php
 
+use CodeHqDk\RepositoryInformation\DemoProvider;
 use CodeHqDk\RepositoryInformation\InformationBlocks\RepositoryNameInformationBlock;
 use CodeHqDk\RepositoryInformation\Services\RepositoryInformationService;
 
@@ -16,12 +17,15 @@ require_once('../config/config.php');
     <link href="css/tables.css" rel='stylesheet' media="all">
 </head>
 <body>
+    <?php
+        $repository_information_list = $repo_info_service->list(DemoProvider::DEMO_FILTER_ID);
+    ?>
     <div class="table-users">
         <div class="header">Repository Information Demo</div>
         <table class="">
             <thead>
             <tr>
-                <?php foreach ($repo_info_service->list() as $repository_information) { ?>
+                <?php foreach ($repository_information_list as $repository_information) { ?>
                     <?php foreach ($repository_information->listInformationBlocks() as $information_block) { ?>
                         <td>
                             <?php echo $information_block->getHeadline() ?>
@@ -32,7 +36,7 @@ require_once('../config/config.php');
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($repo_info_service->list() as $repository_information) { ?>
+            <?php foreach ($repository_information_list as $repository_information) { ?>
                 <tr>
                     <?php foreach ($repository_information->listInformationBlocks() as $information_block) { ?>
                         <td>
